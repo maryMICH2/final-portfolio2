@@ -1,0 +1,333 @@
+/*--------------small screen-----------*/
+@media only screen and (min-width:360px) and (max-width:600px) {
+    * {
+    padding: 0px;   
+    margin: 0px;    
+    font-family: Calibri;
+     /* 'Gill Sans MT', 
+     Calibri, 
+     'Trebuchet MS',
+      sans-serif; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background: rgb(169, 239, 248);
+    }
+
+    .contianer {
+        height:100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 10vh 20vh 20vh 50vh;
+        grid-template-columns: 1fr;
+        grid-area: 
+        "hd"
+        "sd"
+        "likes"
+        "mn"
+        ;
+    }
+
+    /*-------header-----------*/
+    .hd {
+height: 10vh;
+width: 100vw;
+padding: 10px 35px;
+}
+.hd11 {
+    font-size: 20px;
+    color: rgb(16, 18, 19);
+}
+.sd {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-items: center;
+}
+
+.logo {
+    display: flex;
+    padding: 10px 35px;
+    height: 20vh;
+    width: 40vw;
+}
+
+.image {
+height: 20vh;
+width: 40vh;
+display: flex;
+}
+.image img {
+    width: 100px;
+    height: 100px;
+}
+
+.h2 {
+    display: flex;
+    padding-top: 40px;
+    padding-right: 10px;
+}
+.h22 {
+    display: flex;
+    color: rgb(243, 150, 11);
+}
+.likes {
+    display: flex;
+    height: 20vh;
+    width: 100vh;
+    padding: 35px 35px;
+}
+.h4 {
+    display: flex;
+    font-size: 15px;
+    font-weight: 10px ;
+    font-style: normal;
+    color: rgb(16, 18, 19);
+}
+.mn {
+    height: 50vh;
+    width: 100vw;
+    padding: 45px 35px;
+}
+.h5 {
+    height: 7vh;
+}
+.h55 {
+    font-size: 40px;
+    color: rgb(243, 150, 11);
+}
+.para {
+    height: 40vh;
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 23px;
+}
+}
+
+/*--------------meduim screen-----------*/
+@media only screen and (min-width:601px) and (max-width:800px) {
+    * {
+    padding: 0px;   
+    margin: 0px;    
+    font-family: Calibri;
+     /* 'Gill Sans MT', 
+     Calibri, 
+     'Trebuchet MS',
+      sans-serif; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background: rgb(169, 239, 248);
+    }
+
+    .contianer {
+        height:100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 20vh 20vh 10vh 50vh;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "hd hd"
+        "sd sd"
+        "likes likes"
+        "mn mn"
+        ;
+    }
+
+    /*-------header-----------*/
+    .hd {
+    grid-area: hd;
+    height: 20vh;
+    width: 3fr;
+    padding-top: 10px;
+    padding: 10px 35px;
+}
+.hd11 {
+    font-size: 30px;
+    color: rgb(16, 18, 19);
+}
+
+    /*-------aside-----------*/
+
+.sd {
+    grid-area: sd;
+    height: 20vh;
+    display: flex;
+    width: 1fr 2fr;
+}
+
+.logo {
+    display: flex;
+    padding: 0px 35px;
+    height: 20vh;
+    width: 1fr;
+}
+
+.image {
+height: 20vh;
+width: 1fr;
+display: flex;
+}
+.image img {
+    width: 110px;
+    height: 110px;
+}
+
+.h2 {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.h22 {
+    display: flex;
+    font-size: 20px;
+    color: rgb(243, 150, 11);
+}
+.likes {
+    grid-area: likes;
+    display: flex;
+    height: 20vh;
+    width: 3fr;
+    padding: 10px 35px;
+}
+.h4 {
+    padding-bottom: 10px;
+    display: flex;
+    font-size: 13px;
+    font-weight: 10px ;
+    font-style: normal;
+    color: rgb(16, 18, 19);
+}
+.mn {
+    grid-area: mn;
+    height: 50vh;
+    width: 3fr;
+    padding: 30px 35px;
+}
+.h5 {
+    height: 7vh;
+}
+.h55 {
+    font-size: 40px;
+    color: rgb(243, 150, 11);
+}
+.para {
+    height: 40vh;
+    padding-top: 20px;
+    font-size: 15px;
+    line-height: 23px;
+}
+}
+
+/*--------------large screen-----------*/
+@media only screen and (min-width:801px)  {
+    * {
+    padding: 0px;   
+    margin: 0px;    
+    font-family: Calibri;
+     /* 'Gill Sans MT', 
+     Calibri, 
+     'Trebuchet MS',
+      sans-serif; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background: rgba(193, 222, 255, 0.904);
+    }
+
+    .contianer {
+        height:100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 20vh 20vh 20vh 40vh;
+        grid-template-columns: 3fr 6fr;
+        grid-template-areas: 
+        "hd hd"
+        "sd sd"
+        "likes likes"
+        "mn mn"
+        ;
+    }
+
+    /*-------header-----------*/
+    .hd {
+    grid-area: hd;
+    height: 20vh;
+    width: 6fr;
+    padding: 10px 35px;
+}
+.hd11 {
+    font-size: 30px;
+    color: rgb(16, 18, 19);
+}
+
+    /*-------aside-----------*/
+
+.sd {
+    grid-area: sd;
+    height: 20vh;
+    display: flex;
+    width: 3fr 6fr;
+}
+
+.logo {
+    display: flex;
+    padding: 0px 35px;
+    height: 20vh;
+    width: 3fr;
+}
+
+.image {
+height: 20vh;
+width: 3fr;
+display: flex;
+}
+.image img {
+    width: 110px;
+    height: 110px;
+}
+
+.h2 {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.h22 {
+    display: flex;
+    font-size: 20px;
+    color: rgb(243, 150, 11);
+}
+.likes {
+    grid-area: likes;
+    display: flex;
+    height: 20vh;
+    width: 3fr;
+    padding: 30px 35px;
+}
+.h4 {
+    display: flex;
+    font-size: 14px;
+    font-weight: 10px ;
+    font-style: normal;
+    color: rgb(16, 18, 19);
+}
+.mn {
+    grid-area: mn;
+    height: 50vh;
+    width: 3fr;
+    padding: 0px 35px;
+}
+.h5 {
+    height: 7vh;
+    padding-top: 30px;
+}
+.h55 {
+
+    font-size: 40px;
+    color: rgb(243, 150, 11);
+}
+.para {
+    height: 40vh;
+    padding: 0px 10px ;
+    padding-top: 40px;
+    font-size: 15px;
+    line-height: 23px;
+}
+}
