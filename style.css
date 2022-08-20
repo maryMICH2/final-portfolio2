@@ -1,189 +1,208 @@
- /*--------------small screen-----------*/
-@media only screen and (min-width:360px) and (max-width:600px) {
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
- }
+/*--------------small screen-----------*/
+@media  only screen and (min-width:360px) and (max-width:600px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 65vh 35vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "mn"
+        "ft";
+    }
+    .mn {
+        height: 65vh;
+        width: 1fr;
+        grid-area: mn;
+        display: flex;
+        background:url(/portfolio3/images/8bdbd30d6d18f1378dba928c7b5cef26.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+    .sec1 {
+        display: flex;
+        padding-left: 10px;
+        padding-top: 150px;
+        font-size: 13px;
+    }
+    .image {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+    }
 
+    .h1 {
+        padding-top: 20px;
+        display: flex;
+        color:black;
+    }
+    .ft {
+        background: rgba(18, 58, 59, 0.726);
+        grid-area: ft;
+        padding: 10px 10px;
+    }
 
- header {
-    width: 100vw;
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgba(252, 253, 252, 0.781);
- }
+    .ft h2 {
+        color: rgb(233, 164, 35);
+        font-size: 20px;
+        padding:10px 10px;
+    }
 
- .logo {
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: 250;
-    color: rgb(233, 164, 35);
- }
+    .icons_list {
+        line-height: 35px;
+        color: white;
+    }
 
- .navbar a {
-   color: rgb( 233, 164, 35);
-   text-decoration: none;
-   font-size: 15px;
-   font-weight: 100;
-   padding-left: 20px;
- }
- .navbar a:hover{
-    color: rgb(30, 53, 226);
- }
- .mn {
-   padding: 150px 70px;
-    width:  100vw;
-    height: 85vh;
-    display: flex;
-    align-items: center;
-    background: url(images/v1013-p-0009a-x_1.jpg) no-repeat ;
-    background-size: cover;
- }
- .mn h2 {
-    color: rgb(54, 54, 56);
-    font-size: 30px;
-    padding:20px 0px
-
- }
- .mn h2 span {
-    color: rgb(54, 54, 56);
- }
- .icons a {
-    font-size: 25px;
-    padding-right: 30px;
-    color: rgb(29, 30, 31);
- }
+    .icons a {
+        padding-left: 10px;
+        padding-right: 15px;
+        font-size: 20px;
+        color: rgb(12, 12, 12);
+    }
 }
 
 /*-------------- meduim screen-----------*/
 @media only screen and (min-width:601px) and (max-width:800px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 65vh 35vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "mn"
+        "ft";
+    }
+    .mn {
+        height: 65vh;
+        width: 1fr;
+        grid-area: mn;
+        display: flex;
+        background:url(/portfolio3/images/8bdbd30d6d18f1378dba928c7b5cef26.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+    .sec1 {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 160px;
+        font-size: 16px;
+    }
+    .image {
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+    }
 
-   * {
-      padding: 0px;
-      margin: 0px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-   }
-  
-  
-   header {
-      width: 100vw;
-      height: 15vh;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: rgba(252, 253, 252, 0.781);
-   }
-  
-   .logo {
-      text-decoration: none;
-      font-size: 25px;
-      font-weight: 250;
-      color: rgb(233, 164, 35);
-   }
-  
-   .navbar a {
-     color: rgb( 233, 164, 35);
-     text-decoration: none;
-     font-size: 16px;
-     font-weight: 100;
-     padding-left: 25px;
-   }
-   .navbar a:hover{
-      color: rgb(30, 53, 226);
-   }
-   .mn {
-     padding: 150px 70px;
-      width:  100vw;
-      height: 85vh;
-      display: flex;
-      align-items: center;
-      background: url(images/v1013-p-0009a-x_1.jpg) no-repeat ;
-      background-size: cover;
-   }
-   .mn h2 {
-      color: rgb(54, 54, 56);
-      font-size: 45px;
-      padding:20px 0px
-  
-   }
-   .mn h2 span {
-      color: rgb(54, 54, 56);
-   }
-   .icons a {
-      font-size: 27px;
-      padding-right: 35px;
-      color: rgb(29, 30, 31);
-   }
-  }
+    .h1 {
+        padding-top: 20px;
+        display: flex;
+        color:rgb(0, 0, 0);
+    }
+    .ft {
+        background: rgba(18, 58, 59, 0.726);
+        grid-area: ft;
+        padding: 10px 10px;
+    }
 
-  /*-------------- large screen-----------*/
-  @media only screen and (min-width:801px)  {
-   * {
-      padding: 0px;
-      margin: 0px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-   }
-  
-   header {
-      width: 100vw;
-      height: 15vh;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background-color: rgba(252, 253, 252, 0.781);
-   }
-  
-   .logo {
-      text-decoration: none;
-      font-size: 30px;
-      font-weight: 350;
-      color: rgb(233, 164, 35);
-   }
-  
-   .navbar a {
-     color: rgb( 233, 164, 35);
-     text-decoration: none;
-     font-size: 20px;
-     font-weight: 100;
-     padding-left: 25px;
-   }
-   .navbar a:hover{
-      color: rgb(30, 53, 226);
-   }
-   .mn {
-     padding: 150px 70px;
-      width:  100vw;
-      height: 85vh;
-      display: flex;
-      align-items: center;
-      background: url(images/v1013-p-0009a-x_1.jpg) no-repeat ;
-      background-size: cover;
-   }
-   .mn h2 {
-      color: rgb(54, 54, 56);
-      font-size: 45px;
-      padding:20px 0px
-  
-   }
-   .mn h2 span {
-      color: rgb(54, 54, 56);
-   }
-   .icons a {
-      font-size: 27px;
-      padding-right: 35px;
-      color: rgb(29, 30, 31);
-   }
+    .ft h2 {
+        color: rgb(233, 164, 35);
+        font-size: 25px;
+        padding:10px 10px;
+    }
 
-  }
+    .icons_list {
+        line-height: 35px;
+        color: white;
+    }
+
+    .icons a {
+        padding-left: 10px;
+        padding-right: 15px;
+        font-size: 20px;
+        color: rgb(12, 12, 12);
+    }
+}
+/*-------------- large screen-----------*/
+@media only screen and (min-width:801px)  {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 65vh 35vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "mn"
+        "ft";
+    }
+    .mn {
+        height: 65vh;
+        width: 1fr;
+        grid-area: mn;
+        display: flex;
+        background:url(/portfolio3/images/8bdbd30d6d18f1378dba928c7b5cef26.jpg) no-repeat;
+        background-size: cover;
+    }
+    
+    .sec1 {
+        display: flex;
+        padding-left: 30px;
+        padding-top: 150px;
+        font-size: 20px;
+    }
+    image::after {
+        width: 260px;
+        height: 280px;
+    }
+    .image {
+        display: flex;
+        align-items: center;
+    }
+
+    .h1 {
+        padding-top: 30px;
+        display: flex;
+        color:black;
+    }
+    .ft {
+        background: rgba(18, 58, 59, 0.726);
+        grid-area: ft;
+        padding: 10px 10px;
+    }
+
+    .ft h2 {
+        color: rgb(233, 164, 35);
+        font-size: 30px;
+        padding:10px 10px;
+    }
+
+    .icons_list {
+        line-height: 35px;
+        color: white;
+    }
+
+    .icons a {
+        padding-left: 10px;
+        padding-right: 15px;
+        font-size: 20px;
+        color: rgb(12, 12, 12);
+    }
+}
